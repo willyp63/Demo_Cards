@@ -1,0 +1,47 @@
+{
+  "name": "demo_cards",
+  "version": "1.0.0",
+  "description": "Card game like hearthstone, where players create and vote on content.",
+  "main": "server/index.js",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "classnames": "^2.2.5",
+    "express": "^4.15.3",
+    "https": "^1.0.0",
+    "lodash.isempty": "^4.4.0",
+    "lodash.isequal": "^4.5.0",
+    "material-ui": "^1.0.0-beta.20",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "less-watch-compile": "^1.1.8",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.10.0",
+    "eslint-plugin-react": "^7.1.0",
+    "webpack": "^3.3.0"
+  },
+  "scripts": {
+    "serve": "node server/index.js",
+    "webpack": "webpack --config webpack.js --watch --colors",
+    "lessc": "less-watch-compiler client server/static index.less"
+  },
+  "engines": {
+    "node": ">= 7.6.0"
+  },
+  "author": "Wil Pirino",
+  "license": "ISC"
+}
