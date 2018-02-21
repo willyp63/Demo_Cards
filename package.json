@@ -36,8 +36,10 @@
   },
   "scripts": {
     "serve": "node server/index.js",
-    "webpack": "webpack --config webpack.js --watch --colors",
-    "lessc": "less-watch-compiler client server/static index.less"
+    "webpack_arena": "webpack --config arena_client/webpack.js --watch --colors",
+    "lessc_arena": "less-watch-compiler arena_client server/static/arena index.less",
+    "webpack_armory": "webpack --config armory_client/webpack.js --watch --colors",
+    "lessc_armory": "less-watch-compiler armory_client server/static/armory index.less"
   },
   "engines": {
     "node": ">= 7.6.0"

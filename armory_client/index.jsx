@@ -7,7 +7,7 @@ import { Router, Route } from 'react-router-dom';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 
-import App from './components/app';
+import DmArmoryApp from './components/dm_armory_app';
 
 const store = createStore(
   combineReducers({}),
@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Provider store={store}>
       <Router history={createHistory()}>
-        <Route path="/" component={App} />
+        <Route path="/" component={DmArmoryApp} />
       </Router>
     </Provider>,
-    document.getElementById('root'));
+    document.getElementById('dm-armory-root'));
 });
